@@ -9,7 +9,7 @@ import { ServicePage } from './pages/ServicePage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CoolBreezeHVAC">
       <div className="min-h-screen bg-white">
         <ScrollToTop />
         <Navbar />
