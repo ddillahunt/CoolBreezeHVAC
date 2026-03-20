@@ -46,10 +46,12 @@ export function Navbar() {
   return (
     <>
       {/* Emergency banner */}
-      <div className="bg-warm-amber text-navy text-center py-2 text-sm font-semibold tracking-wide">
-        24/7 Emergency Service Available &mdash;{' '}
+      <div className="bg-gradient-to-r from-warm-amber to-warm-amber-light text-navy text-center py-2.5 text-sm font-bold tracking-wide">
+        <span className="hidden sm:inline">Need Emergency HVAC Service? </span>
+        <span className="sm:hidden">Emergency? </span>
+        We're Available 24/7 &mdash;{' '}
         <a href="tel:7042253659" className="underline hover:no-underline">
-          Call 704-225-3659
+          Call (704) 225-3659
         </a>
       </div>
 

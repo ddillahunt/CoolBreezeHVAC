@@ -1,7 +1,10 @@
 import { Helmet } from 'react-helmet-async'
 import { Hero } from '../components/Hero'
+import { BrandLogos } from '../components/BrandLogos'
 import { Services } from '../components/Services'
+import { WhyChooseUs } from '../components/WhyChooseUs'
 import { About } from '../components/About'
+import { Promos } from '../components/Promos'
 import { Testimonials } from '../components/Testimonials'
 import { ServiceArea } from '../components/ServiceArea'
 import { Contact } from '../components/Contact'
@@ -20,8 +23,11 @@ export function HomePage() {
         <meta property="og:type" content="website" />
       </Helmet>
       <Hero />
+      <BrandLogos />
       <Services />
+      <WhyChooseUs />
       <About />
+      <Promos />
       <Testimonials />
       <ServiceArea />
       <Contact />
