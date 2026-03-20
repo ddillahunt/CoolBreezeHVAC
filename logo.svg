@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- Shield/badge shape -->
+  <rect x="2" y="10" width="60" height="60" rx="14" fill="#1E40AF"/>
+
+  <!-- Snowflake -->
+  <g transform="translate(32, 40)" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round">
+    <!-- Main axes -->
+    <line x1="0" y1="-16" x2="0" y2="16"/>
+    <line x1="-13.86" y1="-8" x2="13.86" y2="8"/>
+    <line x1="-13.86" y1="8" x2="13.86" y2="-8"/>
+    <!-- Branches -->
+    <line x1="0" y1="-16" x2="-4" y2="-11"/>
+    <line x1="0" y1="-16" x2="4" y2="-11"/>
+    <line x1="0" y1="16" x2="-4" y2="11"/>
+    <line x1="0" y1="16" x2="4" y2="11"/>
+    <line x1="-13.86" y1="-8" x2="-9.86" y2="-3.5"/>
+    <line x1="13.86" y1="8" x2="9.86" y2="3.5"/>
+    <line x1="-13.86" y1="8" x2="-9.86" y2="3.5"/>
+    <line x1="13.86" y1="-8" x2="9.86" y2="-3.5"/>
+  </g>
+
+  <!-- Wind lines (breeze effect) -->
+  <g stroke="#F97316" stroke-width="2" stroke-linecap="round" opacity="0.9">
+    <path d="M50 25 Q58 25 62 21 Q66 17 72 17" fill="none"/>
+    <path d="M48 40 Q58 40 65 40" fill="none"/>
+    <path d="M50 55 Q58 55 62 59 Q66 63 72 63" fill="none"/>
+  </g>
+
+  <!-- Text: COOL BREEZE -->
+  <text x="80" y="36" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="26" fill="#1E40AF" letter-spacing="-0.5">
+    COOL BREEZE
+  </text>
+
+  <!-- Text: HVAC -->
+  <text x="80" y="60" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="18" fill="#64748B" letter-spacing="6">
+    HVAC
+  </text>
+
+  <!-- Tagline underline -->
+  <line x1="80" y1="44" x2="160" y2="44" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+</svg>
