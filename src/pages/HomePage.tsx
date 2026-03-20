@@ -4,8 +4,10 @@ import { BrandLogos } from '../components/BrandLogos'
 import { Services } from '../components/Services'
 import { WhyChooseUs } from '../components/WhyChooseUs'
 import { About } from '../components/About'
+import { AcQuiz } from '../components/AcQuiz'
 import { Promos } from '../components/Promos'
 import { Testimonials } from '../components/Testimonials'
+import { SavingsCalculator } from '../components/SavingsCalculator'
 import { ServiceArea } from '../components/ServiceArea'
 import { Contact } from '../components/Contact'
 
@@ -27,8 +29,10 @@ export function HomePage() {
       <Services />
       <WhyChooseUs />
       <About />
+      <AcQuiz />
       <Promos />
       <Testimonials />
+      <SavingsCalculator />
       <ServiceArea />
       <Contact />
     </>

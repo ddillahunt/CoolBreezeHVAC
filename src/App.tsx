@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 import { BackToTop } from './components/BackToTop'
 import { MobileCTA } from './components/MobileCTA'
+import { QuickQuote } from './components/QuickQuote'
 import { ScrollToTop } from './components/ScrollToTop'
 import { HomePage } from './pages/HomePage'
 
@@ -35,6 +36,7 @@ function App() {
           <Footer />
           <BackToTop />
           <MobileCTA />
+          <QuickQuote />
         </div>
       </BrowserRouter>
     </HelmetProvider>
