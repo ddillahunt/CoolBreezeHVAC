@@ -1,5 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { ArrowLeft, CheckCircle, Phone, Calendar } from 'lucide-react'
+import { FadeUp } from '../components/AnimateIn'
+import { FAQ } from '../components/FAQ'
 import { services } from '../data/services'
 
 import acServiceImg from '../assets/images/ac-service.jpg'
@@ -44,6 +47,14 @@ export function ServicePage() {
 
   return (
     <>
+      <Helmet>
+        <title>{service.title} | Cool Breeze HVAC - Charlotte, NC</title>
+        <meta name="description" content={service.heroDescription} />
+        <meta property="og:title" content={`${service.title} | Cool Breeze HVAC`} />
+        <meta property="og:description" content={service.heroDescription} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Hero with background image */}
       <section className="bg-navy relative overflow-hidden min-h-[50vh] flex items-end">
         {images && (
@@ -110,7 +121,7 @@ export function ServicePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16">
             {/* Features sidebar */}
-            <div className="lg:col-span-2">
+            <FadeUp className="lg:col-span-2">
               <h2 className="text-2xl font-bold text-navy mb-8">What We Offer</h2>
               <div className="space-y-4">
                 {service.features.map((f) => (
@@ -121,18 +132,17 @@ export function ServicePage() {
                 ))}
               </div>
 
-              {/* Detail image */}
               {images && (
                 <div className="mt-8 rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src={images.detail}
                     alt={`${service.title} service`}
+                    loading="lazy"
                     className="w-full h-48 object-cover"
                   />
                 </div>
               )}
 
-              {/* CTA card */}
               <div className="mt-8 bg-navy rounded-2xl p-8 text-white">
                 <h3 className="text-xl font-bold mb-3">Need This Service?</h3>
                 <p className="text-white/60 mb-6">
@@ -146,10 +156,10 @@ export function ServicePage() {
                   704-225-3659
                 </a>
               </div>
-            </div>
+            </FadeUp>
 
             {/* Details */}
-            <div className="lg:col-span-3">
+            <FadeUp delay={0.15} className="lg:col-span-3">
               <h2 className="text-2xl font-bold text-navy mb-8">
                 Why Choose Cool Breeze for {service.title}
               </h2>
@@ -160,29 +170,53 @@ export function ServicePage() {
                   </p>
                 ))}
               </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
 
+      {/* FAQ */}
+      {service.faqs.length > 0 && (
+        <section className="py-16 lg:py-24 bg-light-gray">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <FadeUp>
+              <div className="text-center mb-12">
+                <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
+                  FAQ
+                </span>
+                <h2 className="text-2xl lg:text-3xl font-bold text-navy mt-3">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <FAQ items={service.faqs} />
+            </FadeUp>
+          </div>
+        </section>
+      )}
+
       {/* Other Services */}
-      <section className="py-16 bg-light-gray">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-navy mb-8 text-center">
-            Explore Our Other Services
-          </h2>
+          <FadeUp>
+            <h2 className="text-2xl font-bold text-navy mb-8 text-center">
+              Explore Our Other Services
+            </h2>
+          </FadeUp>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {otherServices.map((s) => (
-              <Link
-                key={s.slug}
-                to={`/services/${s.slug}`}
-                className="flex items-center gap-3 bg-white rounded-xl p-4 border border-medium-gray hover:border-cool-blue hover:shadow-md transition-all"
-              >
-                <div className={`w-10 h-10 rounded-lg ${s.color} flex items-center justify-center shrink-0`}>
-                  <s.icon size={18} />
-                </div>
-                <span className="font-semibold text-navy text-sm">{s.title}</span>
-              </Link>
+            {otherServices.map((s, i) => (
+              <FadeUp key={s.slug} delay={i * 0.05}>
+                <Link
+                  to={`/services/${s.slug}`}
+                  className="flex items-center gap-3 bg-light-gray rounded-xl p-4 border border-medium-gray hover:border-cool-blue hover:shadow-md transition-all"
+                >
+                  <div className={`w-10 h-10 rounded-lg ${s.color} flex items-center justify-center shrink-0`}>
+                    <s.icon size={18} />
+                  </div>
+                  <span className="font-semibold text-navy text-sm">{s.title}</span>
+                </Link>
+              </FadeUp>
             ))}
           </div>
         </div>
