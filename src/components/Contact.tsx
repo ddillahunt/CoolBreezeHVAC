@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare } from 'lucide-react'
-import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 
 export function Contact() {
   const [form, setForm] = useState({
@@ -38,19 +38,11 @@ export function Contact() {
     <section id="contact" className="py-20 lg:py-28 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <FadeUp>
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-            Contact Us
-          </span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-4">
-            Ready to Get Comfortable?
-          </h2>
-          <p className="text-gray-500 text-lg">
-            Schedule a service or request a free estimate today.
-          </p>
-        </div>
-        </FadeUp>
+        <SectionTitle
+          tag="Contact Us"
+          title="Ready to Get Comfortable?"
+          subtitle="Schedule a service or request a free estimate today."
+        />
 
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Form */}

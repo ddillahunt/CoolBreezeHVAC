@@ -1,5 +1,6 @@
 import { Percent, Snowflake, Wrench } from 'lucide-react'
 import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 
 const promos = [
   {
@@ -32,16 +33,11 @@ export function Promos() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-cool-blue rounded-full blur-[150px]" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeUp>
-          <div className="text-center mb-12">
-            <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-              Special Offers
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mt-3">
-              Current Promotions
-            </h2>
-          </div>
-        </FadeUp>
+        <SectionTitle
+          tag="Special Offers"
+          title="Current Promotions"
+          light
+        />
 
         <div className="grid md:grid-cols-3 gap-6">
           {promos.map((p, i) => (

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 import serviceAcImg from '../assets/images/service-ac.jpg'
 import serviceHeatingImg from '../assets/images/service-heating.jpg'
 import serviceDuctImg from '../assets/images/service-duct.jpg'
@@ -21,20 +22,11 @@ export function Services() {
   return (
     <section id="services" className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-              What We Do
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-4">
-              Our Services
-            </h2>
-            <p className="text-gray-500 text-lg">
-              From emergency repairs to full system installations, we've got your
-              comfort covered.
-            </p>
-          </div>
-        </FadeUp>
+        <SectionTitle
+          tag="What We Do"
+          title="Our Services"
+          subtitle="From emergency repairs to full system installations, we've got your comfort covered."
+        />
 
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {services.slice(0, 3).map((s, i) => {

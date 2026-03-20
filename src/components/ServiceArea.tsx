@@ -139,10 +139,11 @@ export function ServiceArea() {
               <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
                 Service Area
               </span>
-              <h2 className="text-3xl lg:text-4xl font-bold mt-3 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mt-3 mb-2">
                 Proudly Serving the{' '}
                 <span className="text-cool-blue">Greater Charlotte Area</span>
               </h2>
+              <div className="w-12 h-1 rounded-full bg-warm-amber mb-6" />
               <p className="text-white/60 text-lg leading-relaxed mb-8">
                 From Charlotte to the surrounding suburbs, our technicians are
                 just a call away. We provide fast, reliable HVAC service to

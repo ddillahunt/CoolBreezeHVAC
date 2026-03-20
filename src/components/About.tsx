@@ -65,10 +65,11 @@ export function About() {
               <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
                 About Us
               </span>
-              <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-2">
                 Family-Owned.{' '}
                 <span className="text-cool-blue">Community-Driven.</span>
               </h2>
+              <div className="w-12 h-1 rounded-full bg-warm-amber mb-6" />
               <p className="text-gray-500 text-lg leading-relaxed mb-6">
                 Cool Breeze HVAC was founded on a simple promise: honest work at a
                 fair price. For over two decades, we've been the company Charlotte

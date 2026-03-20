@@ -1,5 +1,6 @@
 import { Shield, Clock, Award, DollarSign, Wrench, HeartHandshake } from 'lucide-react'
 import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 
 const reasons = [
   {
@@ -38,19 +39,11 @@ export function WhyChooseUs() {
   return (
     <section className="py-16 lg:py-20 bg-white border-b border-medium-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-              Why Cool Breeze
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-4">
-              The Cool Breeze Difference
-            </h2>
-            <p className="text-gray-500 text-lg">
-              Here's why thousands of Charlotte homeowners trust us with their comfort.
-            </p>
-          </div>
-        </FadeUp>
+        <SectionTitle
+          tag="Why Cool Breeze"
+          title="The Cool Breeze Difference"
+          subtitle="Here's why thousands of Charlotte homeowners trust us with their comfort."
+        />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
           {reasons.map((r, i) => (

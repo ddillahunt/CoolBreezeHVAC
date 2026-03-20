@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react'
 import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -69,16 +70,12 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="py-20 lg:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionTitle
+          tag="Testimonials"
+          title="What Our Customers Say"
+        />
         <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-5">
-            <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-              Testimonials
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-4">
-              What Our Customers Say
-            </h2>
-          </div>
-          <div className="flex items-center justify-center gap-2 mb-14">
+          <div className="flex items-center justify-center gap-2 -mt-8 mb-14">
             <div className="flex -space-x-0.5">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={20} className="text-warm-amber fill-warm-amber" />

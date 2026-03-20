@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ChevronRight, AlertTriangle, CheckCircle, Clock, Phone } from 'lucide-react'
 import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface Question {
@@ -112,19 +113,11 @@ export function AcQuiz() {
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeUp>
-          <div className="text-center mb-12">
-            <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-              Free Assessment
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy mt-3 mb-4">
-              Is Your AC Ready for Summer?
-            </h2>
-            <p className="text-gray-500 text-lg">
-              Answer 4 quick questions to find out if your system needs attention.
-            </p>
-          </div>
-        </FadeUp>
+        <SectionTitle
+          tag="Free Assessment"
+          title="Is Your AC Ready for Summer?"
+          subtitle="Answer 4 quick questions to find out if your system needs attention."
+        />
 
         <FadeUp delay={0.1}>
           <div className="bg-light-gray rounded-2xl p-8 lg:p-10 border border-medium-gray">

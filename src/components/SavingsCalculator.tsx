@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Calculator, DollarSign, TrendingDown, Leaf } from 'lucide-react'
 import { FadeUp } from './AnimateIn'
+import { SectionTitle } from './SectionTitle'
 import { motion } from 'framer-motion'
 
 export function SavingsCalculator() {
@@ -31,19 +32,12 @@ export function SavingsCalculator() {
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeUp>
-          <div className="text-center mb-12">
-            <span className="text-cool-blue font-semibold text-sm uppercase tracking-widest">
-              Savings Calculator
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mt-3 mb-4">
-              How Much Could You Save?
-            </h2>
-            <p className="text-white/50 text-lg">
-              See how much a tune-up or upgrade could save you each year.
-            </p>
-          </div>
-        </FadeUp>
+        <SectionTitle
+          tag="Savings Calculator"
+          title="How Much Could You Save?"
+          subtitle="See how much a tune-up or upgrade could save you each year."
+          light
+        />
 
         <FadeUp delay={0.1}>
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 lg:p-10">
