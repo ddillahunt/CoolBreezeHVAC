@@ -1,41 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
-  <!-- Shield/badge shape -->
-  <rect x="2" y="10" width="60" height="60" rx="14" fill="#1E40AF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" fill="none">
+  <!-- Icon badge -->
+  <rect x="4" y="8" width="64" height="64" rx="16" fill="#1E40AF"/>
+  <rect x="6" y="10" width="60" height="60" rx="14" fill="none" stroke="#38BDF8" stroke-width="0.5" opacity="0.3"/>
 
   <!-- Snowflake -->
-  <g transform="translate(32, 40)" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round">
-    <!-- Main axes -->
-    <line x1="0" y1="-16" x2="0" y2="16"/>
-    <line x1="-13.86" y1="-8" x2="13.86" y2="8"/>
-    <line x1="-13.86" y1="8" x2="13.86" y2="-8"/>
-    <!-- Branches -->
-    <line x1="0" y1="-16" x2="-4" y2="-11"/>
-    <line x1="0" y1="-16" x2="4" y2="-11"/>
-    <line x1="0" y1="16" x2="-4" y2="11"/>
-    <line x1="0" y1="16" x2="4" y2="11"/>
-    <line x1="-13.86" y1="-8" x2="-9.86" y2="-3.5"/>
-    <line x1="13.86" y1="8" x2="9.86" y2="3.5"/>
-    <line x1="-13.86" y1="8" x2="-9.86" y2="3.5"/>
-    <line x1="13.86" y1="-8" x2="9.86" y2="-3.5"/>
+  <g transform="translate(32, 40)" stroke="#38BDF8" stroke-linecap="round">
+    <line x1="0" y1="-15" x2="0" y2="15" stroke-width="2.2"/>
+    <line x1="-13" y1="-7.5" x2="13" y2="7.5" stroke-width="2.2"/>
+    <line x1="-13" y1="7.5" x2="13" y2="-7.5" stroke-width="2.2"/>
+    <line x1="0" y1="-15" x2="-3.5" y2="-10.5" stroke-width="1.8"/>
+    <line x1="0" y1="-15" x2="3.5" y2="-10.5" stroke-width="1.8"/>
+    <line x1="0" y1="15" x2="-3.5" y2="10.5" stroke-width="1.8"/>
+    <line x1="0" y1="15" x2="3.5" y2="10.5" stroke-width="1.8"/>
+    <line x1="13" y1="-7.5" x2="8.5" y2="-3" stroke-width="1.8"/>
+    <line x1="13" y1="-7.5" x2="10" y2="-10.5" stroke-width="1.8"/>
+    <line x1="-13" y1="7.5" x2="-8.5" y2="3" stroke-width="1.8"/>
+    <line x1="-13" y1="7.5" x2="-10" y2="10.5" stroke-width="1.8"/>
+    <line x1="-13" y1="-7.5" x2="-10" y2="-10.5" stroke-width="1.8"/>
+    <line x1="-13" y1="-7.5" x2="-8.5" y2="-3" stroke-width="1.8"/>
+    <line x1="13" y1="7.5" x2="10" y2="10.5" stroke-width="1.8"/>
+    <line x1="13" y1="7.5" x2="8.5" y2="3" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#38BDF8" stroke="none"/>
   </g>
 
-  <!-- Wind lines (breeze effect) -->
-  <g stroke="#F97316" stroke-width="2" stroke-linecap="round" opacity="0.9">
-    <path d="M50 25 Q58 25 62 21 Q66 17 72 17" fill="none"/>
-    <path d="M48 40 Q58 40 65 40" fill="none"/>
-    <path d="M50 55 Q58 55 62 59 Q66 63 72 63" fill="none"/>
+  <!-- Breeze curves on icon -->
+  <g fill="none" stroke="#F97316" stroke-linecap="round">
+    <path d="M44 26 C49 26, 52 23, 57 23" stroke-width="2" opacity="0.9"/>
+    <path d="M46 34 C51 34, 54 31, 59 31" stroke-width="1.5" opacity="0.7"/>
+    <path d="M44 54 C49 54, 52 57, 57 57" stroke-width="2" opacity="0.9"/>
+    <path d="M46 46 C51 46, 54 49, 59 49" stroke-width="1.5" opacity="0.7"/>
   </g>
 
-  <!-- Text: COOL BREEZE -->
-  <text x="80" y="36" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="26" fill="#1E40AF" letter-spacing="-0.5">
+  <!-- Company name -->
+  <text x="82" y="38" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="24" fill="#1E40AF" letter-spacing="0.5">
     COOL BREEZE
   </text>
 
-  <!-- Text: HVAC -->
-  <text x="80" y="60" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="18" fill="#64748B" letter-spacing="6">
+  <!-- Divider line -->
+  <line x1="82" y1="46" x2="142" y2="46" stroke="#F97316" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- HVAC subtitle -->
+  <text x="82" y="63" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="16" fill="#64748B" letter-spacing="5">
     HVAC
   </text>
 
-  <!-- Tagline underline -->
-  <line x1="80" y1="44" x2="160" y2="44" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tagline -->
+  <text x="140" y="63" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="10" fill="#94A3B8" letter-spacing="0.5">
+    HEATING &amp; COOLING
+  </text>
 </svg>
