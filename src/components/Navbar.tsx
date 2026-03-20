@@ -64,13 +64,16 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2">
-              <span className="text-cool-blue font-bold text-xl lg:text-2xl tracking-tight">
-                Cool Breeze
-              </span>
-              <span className="text-white/70 font-light text-lg lg:text-xl">
-                HVAC
-              </span>
+            <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-3">
+              <img src={`${import.meta.env.BASE_URL}logo-icon.svg`} alt="Cool Breeze HVAC" className="w-9 h-9 lg:w-10 lg:h-10" />
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-white font-extrabold text-lg lg:text-xl tracking-tight">
+                  COOL BREEZE
+                </span>
+                <span className="text-cool-blue font-medium text-sm lg:text-base tracking-wider">
+                  HVAC
+                </span>
+              </div>
             </Link>
 
             {/* Desktop links */}

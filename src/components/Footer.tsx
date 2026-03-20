@@ -9,11 +9,12 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Company */}
           <div>
-            <div className="mb-4">
-              <span className="text-cool-blue font-bold text-xl">
-                Cool Breeze
-              </span>{' '}
-              <span className="text-white/70 font-light text-lg">HVAC</span>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={`${import.meta.env.BASE_URL}logo-icon.svg`} alt="Cool Breeze HVAC" className="w-10 h-10" />
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-white font-extrabold text-lg">COOL BREEZE</span>
+                <span className="text-cool-blue font-medium text-sm tracking-wider">HVAC</span>
+              </div>
             </div>
             <p className="text-white/50 leading-relaxed mb-6">
               Superior heating and air conditioning services for the greater

@@ -50,10 +50,10 @@ function ServiceMap() {
         disableDefaultUI: true,
         zoomControl: true,
         styles: [
-          { elementType: 'geometry', stylers: [{ color: '#1E40AF' }] },
-          { elementType: 'labels.text.stroke', stylers: [{ color: '#1E40AF' }] },
+          { elementType: 'geometry', stylers: [{ color: '#1B2A4A' }] },
+          { elementType: 'labels.text.stroke', stylers: [{ color: '#1B2A4A' }] },
           { elementType: 'labels.text.fill', stylers: [{ color: '#6b7d9e' }] },
-          { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#2549B8' }] },
+          { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#243558' }] },
           { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#5a7099' }] },
           { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#131d30' }] },
           { featureType: 'poi', stylers: [{ visibility: 'off' }] },
@@ -69,7 +69,7 @@ function ServiceMap() {
         icon: {
           path: google.maps.SymbolPath.CIRCLE,
           scale: 10,
-          fillColor: '#F97316',
+          fillColor: '#F5A623',
           fillOpacity: 1,
           strokeColor: '#fff',
           strokeWeight: 2,
@@ -85,7 +85,7 @@ function ServiceMap() {
           icon: {
             path: google.maps.SymbolPath.CIRCLE,
             scale: 6,
-            fillColor: '#38BDF8',
+            fillColor: '#4DA8DA',
             fillOpacity: 0.8,
             strokeColor: '#fff',
             strokeWeight: 1,
@@ -103,9 +103,9 @@ function ServiceMap() {
         center: HQ,
         radius: 32000, // ~20 miles
         map,
-        fillColor: '#38BDF8',
+        fillColor: '#4DA8DA',
         fillOpacity: 0.08,
-        strokeColor: '#38BDF8',
+        strokeColor: '#4DA8DA',
         strokeOpacity: 0.3,
         strokeWeight: 1,
       })
